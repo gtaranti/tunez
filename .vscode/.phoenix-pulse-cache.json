@@ -1,0 +1,1670 @@
+{
+  "version": "1.0.0",
+  "timestamp": 1761722428956,
+  "workspaceRoot": "/var/home/gt/src/tunez",
+  "registries": {
+    "components": {
+      "components": [
+        [
+          "__phoenix_builtins__",
+          [
+            {
+              "name": "link",
+              "moduleName": "Phoenix.Component",
+              "filePath": "/var/home/gt/.vscode/extensions/onsever.phoenix-pulse-1.3.0/node_modules/@phoenix-pulse/language-server/resources/phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.link/1 – Generates an anchor tag that supports LiveView-aware navigation.",
+              "attributes": [
+                {
+                  "name": "navigate",
+                  "type": "string",
+                  "required": false,
+                  "doc": "Use VerifiedRoutes: `navigate={~p\"/path\"}`"
+                },
+                {
+                  "name": "patch",
+                  "type": "string",
+                  "required": false,
+                  "doc": "Use VerifiedRoutes: `patch={~p\"/path\"}`"
+                },
+                {
+                  "name": "href",
+                  "type": "string",
+                  "required": false,
+                  "doc": "External/legacy target. Prefer `navigate`/`patch` with VerifiedRoutes."
+                },
+                {
+                  "name": "method",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "replace",
+                  "type": "boolean",
+                  "required": false
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "live_patch",
+              "moduleName": "Phoenix.Component",
+              "filePath": "/var/home/gt/.vscode/extensions/onsever.phoenix-pulse-1.3.0/node_modules/@phoenix-pulse/language-server/resources/phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.live_patch/1 – Generates a patch navigation link within the same LiveView.",
+              "attributes": [
+                {
+                  "name": "patch",
+                  "type": "string",
+                  "required": true,
+                  "doc": "Use VerifiedRoutes: `patch={~p\"/path\"}`"
+                },
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "replace",
+                  "type": "boolean",
+                  "required": false
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "live_redirect",
+              "moduleName": "Phoenix.Component",
+              "filePath": "/var/home/gt/.vscode/extensions/onsever.phoenix-pulse-1.3.0/node_modules/@phoenix-pulse/language-server/resources/phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.live_redirect/1 – Generates a redirect navigation link to another LiveView or controller.",
+              "attributes": [
+                {
+                  "name": "navigate",
+                  "type": "string",
+                  "required": true,
+                  "doc": "Use VerifiedRoutes: `navigate={~p\"/path\"}`"
+                },
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "replace",
+                  "type": "boolean",
+                  "required": false
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "live_component",
+              "moduleName": "Phoenix.Component",
+              "filePath": "/var/home/gt/.vscode/extensions/onsever.phoenix-pulse-1.3.0/node_modules/@phoenix-pulse/language-server/resources/phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.live_component/1 – Embeds a stateful LiveComponent from HEEx.",
+              "attributes": [
+                {
+                  "name": "module",
+                  "type": "module",
+                  "required": true,
+                  "doc": "LiveComponent module (e.g., `module={MyAppWeb.ModalComponent}`)."
+                },
+                {
+                  "name": "id",
+                  "type": "string",
+                  "required": true
+                },
+                {
+                  "name": ":for",
+                  "type": "any",
+                  "required": false
+                },
+                {
+                  "name": ":let",
+                  "type": "any",
+                  "required": false
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "form",
+              "moduleName": "Phoenix.Component",
+              "filePath": "/var/home/gt/.vscode/extensions/onsever.phoenix-pulse-1.3.0/node_modules/@phoenix-pulse/language-server/resources/phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.form/1 – Renders a HEEx form with support for :let assigns and action attributes.",
+              "attributes": [
+                {
+                  "name": "for",
+                  "type": "any",
+                  "required": true
+                },
+                {
+                  "name": "as",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "id",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "action",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "method",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "phx-submit",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "phx-change",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": ":let",
+                  "type": "any",
+                  "required": false
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                },
+                {
+                  "name": "actions",
+                  "required": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "inputs_for",
+              "moduleName": "Phoenix.Component",
+              "filePath": "/var/home/gt/.vscode/extensions/onsever.phoenix-pulse-1.3.0/node_modules/@phoenix-pulse/language-server/resources/phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.inputs_for/1 – Iterates nested inputs for associations or embeds within a parent form.",
+              "attributes": [
+                {
+                  "name": "field",
+                  "type": "any",
+                  "required": true,
+                  "doc": "Form field or association (e.g., `field={f[:addresses]}`)."
+                },
+                {
+                  "name": ":let",
+                  "type": "any",
+                  "required": true,
+                  "doc": "Binding for the nested form (e.g., `:let={address_form}`)."
+                },
+                {
+                  "name": "for",
+                  "type": "any",
+                  "required": false,
+                  "doc": "Explicit changeset/source for the nested inputs."
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex",
+          [
+            {
+              "name": "avatar",
+              "moduleName": "TunezWeb.CoreComponents",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex",
+              "line": 571,
+              "attributes": [
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false,
+                  "default": "\"\"",
+                  "rawType": "string"
+                },
+                {
+                  "name": "user",
+                  "type": "any",
+                  "required": false,
+                  "rawType": "any"
+                }
+              ],
+              "slots": []
+            },
+            {
+              "name": "icon",
+              "moduleName": "TunezWeb.CoreComponents",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex",
+              "line": 562,
+              "attributes": [
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false,
+                  "default": "nil",
+                  "rawType": "string"
+                },
+                {
+                  "name": "name",
+                  "type": "string",
+                  "required": true,
+                  "rawType": "string"
+                }
+              ],
+              "slots": []
+            },
+            {
+              "name": "header",
+              "moduleName": "TunezWeb.CoreComponents",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex",
+              "line": 488,
+              "attributes": [
+                {
+                  "name": "responsive",
+                  "type": "boolean",
+                  "required": false,
+                  "default": "true",
+                  "rawType": "boolean"
+                },
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false,
+                  "default": "nil",
+                  "rawType": "string"
+                }
+              ],
+              "slots": [
+                {
+                  "name": "action",
+                  "required": false,
+                  "attributes": []
+                },
+                {
+                  "name": "subtitle",
+                  "required": false,
+                  "attributes": []
+                },
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "error",
+              "moduleName": "TunezWeb.CoreComponents",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex",
+              "line": 466,
+              "attributes": [],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "label",
+              "moduleName": "TunezWeb.CoreComponents",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex",
+              "line": 453,
+              "attributes": [
+                {
+                  "name": "for",
+                  "type": "string",
+                  "required": false,
+                  "default": "nil",
+                  "rawType": "string"
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "form_control",
+              "moduleName": "TunezWeb.CoreComponents",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex",
+              "line": 439,
+              "attributes": [
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false,
+                  "default": "\"\"",
+                  "rawType": "string"
+                },
+                {
+                  "name": "errors",
+                  "type": "list",
+                  "required": false,
+                  "default": "[]",
+                  "rawType": "list"
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "input",
+              "moduleName": "TunezWeb.CoreComponents",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex",
+              "line": 347,
+              "attributes": [
+                {
+                  "name": "rest",
+                  "type": "global",
+                  "required": false,
+                  "rawType": "global"
+                },
+                {
+                  "name": "multiple",
+                  "type": "boolean",
+                  "required": false,
+                  "default": "false",
+                  "doc": "the multiple flag for select inputs",
+                  "rawType": "boolean"
+                },
+                {
+                  "name": "options",
+                  "type": "list",
+                  "required": false,
+                  "doc": "the options to pass to Phoenix.HTML.Form.options_for_select/2",
+                  "rawType": "list"
+                },
+                {
+                  "name": "prompt",
+                  "type": "string",
+                  "required": false,
+                  "default": "nil",
+                  "doc": "the prompt for select inputs",
+                  "rawType": "string"
+                },
+                {
+                  "name": "checked",
+                  "type": "boolean",
+                  "required": false,
+                  "doc": "the checked flag for checkbox inputs",
+                  "rawType": "boolean"
+                },
+                {
+                  "name": "errors",
+                  "type": "list",
+                  "required": false,
+                  "default": "[]",
+                  "rawType": "list"
+                },
+                {
+                  "name": "field",
+                  "type": "{:__aliases__, [last: [line: 334, column: 29], line: 334, column: 16], [:Phoenix, :HTML, :FormField]}",
+                  "required": false,
+                  "doc": "a form field struct retrieved from the form, for example: @form[:email]",
+                  "rawType": "{:__aliases__, [last: [line: 334, column: 29], line: 334, column: 16], [:Phoenix, :HTML, :FormField]}"
+                },
+                {
+                  "name": "type",
+                  "type": "string",
+                  "required": false,
+                  "default": "\"text\"",
+                  "rawType": "string"
+                },
+                {
+                  "name": "container_class",
+                  "type": "string",
+                  "required": false,
+                  "default": "\"\"",
+                  "doc": "Classes to be applied to the parent div",
+                  "rawType": "string"
+                },
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false,
+                  "default": "\"\"",
+                  "doc": "Any extra classes to be applied",
+                  "rawType": "string"
+                },
+                {
+                  "name": "value",
+                  "type": "any",
+                  "required": false,
+                  "rawType": "any"
+                },
+                {
+                  "name": "label",
+                  "type": "string",
+                  "required": false,
+                  "default": "nil",
+                  "rawType": "string"
+                },
+                {
+                  "name": "name",
+                  "type": "any",
+                  "required": false,
+                  "rawType": "any"
+                },
+                {
+                  "name": "id",
+                  "type": "any",
+                  "required": false,
+                  "default": "nil",
+                  "rawType": "any"
+                }
+              ],
+              "slots": []
+            },
+            {
+              "name": "button",
+              "moduleName": "TunezWeb.CoreComponents",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex",
+              "line": 275,
+              "attributes": [
+                {
+                  "name": "rest",
+                  "type": "global",
+                  "required": false,
+                  "rawType": "global"
+                },
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false,
+                  "default": "nil",
+                  "rawType": "string"
+                },
+                {
+                  "name": "type",
+                  "type": "string",
+                  "required": false,
+                  "default": "nil",
+                  "rawType": "string"
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "simple_form",
+              "moduleName": "TunezWeb.CoreComponents",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex",
+              "line": 248,
+              "attributes": [
+                {
+                  "name": "rest",
+                  "type": "global",
+                  "required": false,
+                  "doc": "the arbitrary HTML attributes to apply to the form tag",
+                  "rawType": "global"
+                },
+                {
+                  "name": "as",
+                  "type": "any",
+                  "required": false,
+                  "default": "nil",
+                  "doc": "the server side parameter to collect all input under",
+                  "rawType": "any"
+                },
+                {
+                  "name": "for",
+                  "type": "any",
+                  "required": true,
+                  "doc": "the data structure for the form",
+                  "rawType": "any"
+                }
+              ],
+              "slots": [
+                {
+                  "name": "actions",
+                  "required": false,
+                  "doc": "the slot for form actions, such as a submit button",
+                  "attributes": []
+                },
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "button_link",
+              "moduleName": "TunezWeb.CoreComponents",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex",
+              "line": 173,
+              "attributes": [
+                {
+                  "name": "rest",
+                  "type": "global",
+                  "required": false,
+                  "rawType": "global"
+                },
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false,
+                  "default": "\"\"",
+                  "rawType": "string"
+                },
+                {
+                  "name": "size",
+                  "type": "string",
+                  "required": false,
+                  "default": "\"md\"",
+                  "rawType": "string"
+                },
+                {
+                  "name": "inverse",
+                  "type": "boolean",
+                  "required": false,
+                  "default": "false",
+                  "rawType": "boolean"
+                },
+                {
+                  "name": "kind",
+                  "type": "string",
+                  "required": false,
+                  "default": "\"base\"",
+                  "rawType": "string"
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "cover_image",
+              "moduleName": "TunezWeb.CoreComponents",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex",
+              "line": 150,
+              "attributes": [
+                {
+                  "name": "image",
+                  "type": "string",
+                  "required": false,
+                  "default": "nil",
+                  "rawType": "string"
+                }
+              ],
+              "slots": []
+            },
+            {
+              "name": "h2",
+              "moduleName": "TunezWeb.CoreComponents",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex",
+              "line": 140,
+              "attributes": [],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "h1",
+              "moduleName": "TunezWeb.CoreComponents",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex",
+              "line": 130,
+              "attributes": [],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "flash_group",
+              "moduleName": "TunezWeb.CoreComponents",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex",
+              "line": 95,
+              "attributes": [
+                {
+                  "name": "id",
+                  "type": "string",
+                  "required": false,
+                  "default": "\"flash-group\"",
+                  "doc": "the optional id of flash container",
+                  "rawType": "string"
+                },
+                {
+                  "name": "flash",
+                  "type": "map",
+                  "required": true,
+                  "doc": "the map of flash messages",
+                  "rawType": "map"
+                }
+              ],
+              "slots": []
+            },
+            {
+              "name": "flash",
+              "moduleName": "TunezWeb.CoreComponents",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex",
+              "line": 43,
+              "attributes": [
+                {
+                  "name": "rest",
+                  "type": "global",
+                  "required": false,
+                  "doc": "the arbitrary HTML attributes to add to the flash container",
+                  "rawType": "global"
+                },
+                {
+                  "name": "kind",
+                  "type": "atom",
+                  "required": false,
+                  "values": [
+                    "warning",
+                    "info",
+                    "error"
+                  ],
+                  "doc": "used for styling and flash lookup",
+                  "rawType": "atom"
+                },
+                {
+                  "name": "title",
+                  "type": "string",
+                  "required": false,
+                  "default": "nil",
+                  "rawType": "string"
+                },
+                {
+                  "name": "flash",
+                  "type": "map",
+                  "required": false,
+                  "default": "{:%{}, [closing: [line: 32, column: 33], line: 32, column: 31], []}",
+                  "doc": "the map of flash messages to display",
+                  "rawType": "map"
+                },
+                {
+                  "name": "id",
+                  "type": "string",
+                  "required": false,
+                  "doc": "the optional id of flash container",
+                  "rawType": "string"
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": false,
+                  "doc": "the optional inner block that renders the flash message",
+                  "attributes": []
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex",
+          [
+            {
+              "name": "sort_changer",
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex",
+              "line": 133,
+              "attributes": [],
+              "slots": []
+            },
+            {
+              "name": "search_box",
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex",
+              "line": 117,
+              "attributes": [
+                {
+                  "name": "rest",
+                  "type": "global",
+                  "required": false,
+                  "rawType": "global"
+                },
+                {
+                  "name": "query",
+                  "type": "string",
+                  "required": false,
+                  "default": "\"\"",
+                  "rawType": "string"
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "pagination_links",
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex",
+              "line": 100,
+              "attributes": [],
+              "slots": []
+            },
+            {
+              "name": "follower_count_display",
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex",
+              "line": 88,
+              "attributes": [],
+              "slots": []
+            },
+            {
+              "name": "follow_icon",
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex",
+              "line": 82,
+              "attributes": [],
+              "slots": []
+            },
+            {
+              "name": "artist_card_album_info",
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex",
+              "line": 71,
+              "attributes": [],
+              "slots": []
+            },
+            {
+              "name": "artist_card",
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex",
+              "line": 52,
+              "attributes": [],
+              "slots": []
+            },
+            {
+              "name": "render",
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex",
+              "line": 26,
+              "attributes": [],
+              "slots": []
+            }
+          ]
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/components/layouts.ex",
+          [
+            {
+              "name": "user_info",
+              "moduleName": "TunezWeb.Layouts",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/layouts.ex",
+              "line": 40,
+              "attributes": [],
+              "slots": []
+            },
+            {
+              "name": "app",
+              "moduleName": "TunezWeb.Layouts",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/components/layouts.ex",
+              "line": 15,
+              "attributes": [],
+              "slots": []
+            }
+          ]
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/controllers/error_html.ex",
+          []
+        ]
+      ],
+      "fileHashes": {
+        "/var/home/gt/src/tunez/lib/tunez_web/components/core_components.ex": "e502f96aa9674b055a3c2ceb4bc8a9d47e096381",
+        "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex": "32bec7af61818ef692c692700f2e10b7c43a5c7c",
+        "/var/home/gt/src/tunez/lib/tunez_web/components/layouts.ex": "b7619c9b023c2e7b62ea30ecc3a0aaf53505a03b",
+        "/var/home/gt/src/tunez/lib/tunez_web/controllers/error_html.ex": "dab975dc37277bcb17c1ef2c53f541056e40f34d"
+      },
+      "workspaceRoot": "/var/home/gt/src/tunez"
+    },
+    "schemas": {
+      "schemas": [],
+      "schemasByFile": [],
+      "fileHashes": {},
+      "workspaceRoot": "/var/home/gt/src/tunez"
+    },
+    "events": {
+      "events": [
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/form_live.ex",
+          [
+            {
+              "name": "save",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/form_live.ex",
+              "moduleName": "TunezWeb.Artists.FormLive",
+              "line": 44,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "validate",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/form_live.ex",
+              "moduleName": "TunezWeb.Artists.FormLive",
+              "line": 40,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            }
+          ]
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex",
+          [
+            {
+              "name": "reorder-tracks",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex",
+              "moduleName": "TunezWeb.Albums.FormLive",
+              "line": 112,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "remove-track",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex",
+              "moduleName": "TunezWeb.Albums.FormLive",
+              "line": 108,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "add-track",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex",
+              "moduleName": "TunezWeb.Albums.FormLive",
+              "line": 104,
+              "params": "_params",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "save",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex",
+              "moduleName": "TunezWeb.Albums.FormLive",
+              "line": 100,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "validate",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex",
+              "moduleName": "TunezWeb.Albums.FormLive",
+              "line": 96,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            }
+          ]
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/notifications_live.ex",
+          [
+            {
+              "name": "dismiss-notification",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/notifications_live.ex",
+              "moduleName": "TunezWeb.NotificationsLive",
+              "line": 59,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            }
+          ]
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex",
+          [
+            {
+              "name": "unfollow",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex",
+              "moduleName": "TunezWeb.Artists.ShowLive",
+              "line": 166,
+              "params": "_params",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "follow",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex",
+              "moduleName": "TunezWeb.Artists.ShowLive",
+              "line": 162,
+              "params": "_params",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "destroy-album",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex",
+              "moduleName": "TunezWeb.Artists.ShowLive",
+              "line": 158,
+              "params": "_params",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "destroy-artist",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex",
+              "moduleName": "TunezWeb.Artists.ShowLive",
+              "line": 154,
+              "params": "_params",
+              "kind": "handle_event",
+              "nameKind": "string"
+            }
+          ]
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex",
+          [
+            {
+              "name": "search",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex",
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "line": 179,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "change-sort",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex",
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "line": 174,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            }
+          ]
+        ]
+      ],
+      "fileHashes": {
+        "/var/home/gt/src/tunez/lib/tunez_web/live/artists/form_live.ex": "a3ab45cad2142b781e0f0018c7d03d17e69bdce2",
+        "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex": "7b33c7672d805e4aa3c93106b82dd7092c155d35",
+        "/var/home/gt/src/tunez/lib/tunez_web/live/notifications_live.ex": "a71b79f57e5477554bcba913bd2859ba75636dd9",
+        "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex": "2a6e67cf19fe099b9fe441df1b10bbbc0127dc1e",
+        "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex": "32bec7af61818ef692c692700f2e10b7c43a5c7c"
+      },
+      "workspaceRoot": "/var/home/gt/src/tunez"
+    },
+    "routes": {
+      "routes": [
+        {
+          "path": "/albums/:id/edit",
+          "verb": "LIVE",
+          "filePath": "/var/home/gt/src/tunez/lib/tunez_web/router.ex",
+          "line": 25,
+          "helperBase": "albums_edit",
+          "params": [
+            "id"
+          ],
+          "isResource": false,
+          "liveModule": "Albums.FormLive",
+          "liveAction": "edit",
+          "scopePath": "/"
+        },
+        {
+          "path": "/artists/:artist_id/albums/new",
+          "verb": "LIVE",
+          "filePath": "/var/home/gt/src/tunez/lib/tunez_web/router.ex",
+          "line": 24,
+          "helperBase": "artists_albums_new",
+          "params": [
+            "artist_id"
+          ],
+          "isResource": false,
+          "liveModule": "Albums.FormLive",
+          "liveAction": "new",
+          "scopePath": "/"
+        },
+        {
+          "path": "/artists/:id/edit",
+          "verb": "LIVE",
+          "filePath": "/var/home/gt/src/tunez/lib/tunez_web/router.ex",
+          "line": 23,
+          "helperBase": "artists_edit",
+          "params": [
+            "id"
+          ],
+          "isResource": false,
+          "liveModule": "Artists.FormLive",
+          "liveAction": "edit",
+          "scopePath": "/"
+        },
+        {
+          "path": "/artists/:id",
+          "verb": "LIVE",
+          "filePath": "/var/home/gt/src/tunez/lib/tunez_web/router.ex",
+          "line": 22,
+          "helperBase": "artists",
+          "params": [
+            "id"
+          ],
+          "isResource": false,
+          "liveModule": "Artists.ShowLive",
+          "scopePath": "/"
+        },
+        {
+          "path": "/artists/new",
+          "verb": "LIVE",
+          "filePath": "/var/home/gt/src/tunez/lib/tunez_web/router.ex",
+          "line": 21,
+          "helperBase": "artists_new",
+          "params": [],
+          "isResource": false,
+          "liveModule": "Artists.FormLive",
+          "liveAction": "new",
+          "scopePath": "/"
+        },
+        {
+          "path": "/",
+          "verb": "LIVE",
+          "filePath": "/var/home/gt/src/tunez/lib/tunez_web/router.ex",
+          "line": 20,
+          "helperBase": "root",
+          "params": [],
+          "isResource": false,
+          "liveModule": "Artists.IndexLive",
+          "scopePath": "/"
+        }
+      ],
+      "fileHashes": {
+        "/var/home/gt/src/tunez/lib/tunez_web/router.ex": "0a7c3f43254614ea73e2efc944737879ceeb948e"
+      },
+      "workspaceRoot": "/var/home/gt/src/tunez"
+    },
+    "controllers": {
+      "rendersByFile": [],
+      "templateSummaries": [],
+      "fileHashes": {},
+      "workspaceRoot": "/var/home/gt/src/tunez"
+    },
+    "templates": {
+      "templatesByModule": [
+        [
+          "TunezWeb.Albums.FormLive",
+          [
+            {
+              "moduleName": "TunezWeb.Albums.FormLive",
+              "name": "track_inputs",
+              "format": "html",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex#track_inputs"
+            },
+            {
+              "moduleName": "TunezWeb.Albums.FormLive",
+              "name": "render",
+              "format": "html",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex#render"
+            }
+          ]
+        ],
+        [
+          "TunezWeb.Artists.FormLive",
+          [
+            {
+              "moduleName": "TunezWeb.Artists.FormLive",
+              "name": "render",
+              "format": "html",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/form_live.ex#render"
+            }
+          ]
+        ],
+        [
+          "TunezWeb.NotificationsLive",
+          [
+            {
+              "moduleName": "TunezWeb.NotificationsLive",
+              "name": "render",
+              "format": "html",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/notifications_live.ex#render"
+            }
+          ]
+        ],
+        [
+          "TunezWeb.Artists.ShowLive",
+          [
+            {
+              "moduleName": "TunezWeb.Artists.ShowLive",
+              "name": "follow_toggle",
+              "format": "html",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex#follow_toggle"
+            },
+            {
+              "moduleName": "TunezWeb.Artists.ShowLive",
+              "name": "album_details",
+              "format": "html",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex#album_details"
+            },
+            {
+              "moduleName": "TunezWeb.Artists.ShowLive",
+              "name": "render",
+              "format": "html",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex#render"
+            }
+          ]
+        ],
+        [
+          "TunezWeb.Artists.IndexLive",
+          [
+            {
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "name": "sort_changer",
+              "format": "html",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#sort_changer"
+            },
+            {
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "name": "search_box",
+              "format": "html",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#search_box"
+            },
+            {
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "name": "pagination_links",
+              "format": "html",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#pagination_links"
+            },
+            {
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "name": "follower_count_display",
+              "format": "html",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#follower_count_display"
+            },
+            {
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "name": "follow_icon",
+              "format": "html",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#follow_icon"
+            },
+            {
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "name": "artist_card_album_info",
+              "format": "html",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#artist_card_album_info"
+            },
+            {
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "name": "artist_card",
+              "format": "html",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#artist_card"
+            },
+            {
+              "moduleName": "TunezWeb.Artists.IndexLive",
+              "name": "render",
+              "format": "html",
+              "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#render"
+            }
+          ]
+        ]
+      ],
+      "templatesByPath": [
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex#track_inputs",
+          {
+            "moduleName": "TunezWeb.Albums.FormLive",
+            "name": "track_inputs",
+            "format": "html",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex#track_inputs"
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex#render",
+          {
+            "moduleName": "TunezWeb.Albums.FormLive",
+            "name": "render",
+            "format": "html",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex#render"
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/form_live.ex#render",
+          {
+            "moduleName": "TunezWeb.Artists.FormLive",
+            "name": "render",
+            "format": "html",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/form_live.ex#render"
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/notifications_live.ex#render",
+          {
+            "moduleName": "TunezWeb.NotificationsLive",
+            "name": "render",
+            "format": "html",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/notifications_live.ex#render"
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex#follow_toggle",
+          {
+            "moduleName": "TunezWeb.Artists.ShowLive",
+            "name": "follow_toggle",
+            "format": "html",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex#follow_toggle"
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex#album_details",
+          {
+            "moduleName": "TunezWeb.Artists.ShowLive",
+            "name": "album_details",
+            "format": "html",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex#album_details"
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex#render",
+          {
+            "moduleName": "TunezWeb.Artists.ShowLive",
+            "name": "render",
+            "format": "html",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex#render"
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#sort_changer",
+          {
+            "moduleName": "TunezWeb.Artists.IndexLive",
+            "name": "sort_changer",
+            "format": "html",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#sort_changer"
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#search_box",
+          {
+            "moduleName": "TunezWeb.Artists.IndexLive",
+            "name": "search_box",
+            "format": "html",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#search_box"
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#pagination_links",
+          {
+            "moduleName": "TunezWeb.Artists.IndexLive",
+            "name": "pagination_links",
+            "format": "html",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#pagination_links"
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#follower_count_display",
+          {
+            "moduleName": "TunezWeb.Artists.IndexLive",
+            "name": "follower_count_display",
+            "format": "html",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#follower_count_display"
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#follow_icon",
+          {
+            "moduleName": "TunezWeb.Artists.IndexLive",
+            "name": "follow_icon",
+            "format": "html",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#follow_icon"
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#artist_card_album_info",
+          {
+            "moduleName": "TunezWeb.Artists.IndexLive",
+            "name": "artist_card_album_info",
+            "format": "html",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#artist_card_album_info"
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#artist_card",
+          {
+            "moduleName": "TunezWeb.Artists.IndexLive",
+            "name": "artist_card",
+            "format": "html",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#artist_card"
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#render",
+          {
+            "moduleName": "TunezWeb.Artists.IndexLive",
+            "name": "render",
+            "format": "html",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex#render"
+          }
+        ]
+      ],
+      "moduleByFile": [
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex",
+          "TunezWeb.Albums.FormLive"
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/form_live.ex",
+          "TunezWeb.Artists.FormLive"
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/notifications_live.ex",
+          "TunezWeb.NotificationsLive"
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex",
+          "TunezWeb.Artists.ShowLive"
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex",
+          "TunezWeb.Artists.IndexLive"
+        ]
+      ],
+      "fileHashes": {
+        "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex": "7b33c7672d805e4aa3c93106b82dd7092c155d35",
+        "/var/home/gt/src/tunez/lib/tunez_web/live/artists/form_live.ex": "a3ab45cad2142b781e0f0018c7d03d17e69bdce2",
+        "/var/home/gt/src/tunez/lib/tunez_web/live/notifications_live.ex": "a71b79f57e5477554bcba913bd2859ba75636dd9",
+        "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex": "2a6e67cf19fe099b9fe441df1b10bbbc0127dc1e",
+        "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex": "32bec7af61818ef692c692700f2e10b7c43a5c7c"
+      },
+      "workspaceRoot": "/var/home/gt/src/tunez"
+    },
+    "liveview": {
+      "liveViews": [
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/form_live.ex",
+          {
+            "module": "TunezWeb.Artists.FormLive",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/form_live.ex",
+            "functions": [
+              {
+                "line": 44,
+                "name": "save",
+                "type": "handle_event",
+                "module_name": "TunezWeb.Artists.FormLive",
+                "event_name": "save"
+              },
+              {
+                "line": 40,
+                "name": "validate",
+                "type": "handle_event",
+                "module_name": "TunezWeb.Artists.FormLive",
+                "event_name": "validate"
+              },
+              {
+                "line": 15,
+                "name": "render",
+                "type": "render",
+                "module_name": "TunezWeb.Artists.FormLive"
+              },
+              {
+                "line": 4,
+                "name": "mount",
+                "type": "mount",
+                "module_name": "TunezWeb.Artists.FormLive"
+              }
+            ]
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex",
+          {
+            "module": "TunezWeb.Artists.ShowLive",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex",
+            "functions": [
+              {
+                "line": 166,
+                "name": "unfollow",
+                "type": "handle_event",
+                "module_name": "TunezWeb.Artists.ShowLive",
+                "event_name": "unfollow"
+              },
+              {
+                "line": 162,
+                "name": "follow",
+                "type": "handle_event",
+                "module_name": "TunezWeb.Artists.ShowLive",
+                "event_name": "follow"
+              },
+              {
+                "line": 158,
+                "name": "destroy-album",
+                "type": "handle_event",
+                "module_name": "TunezWeb.Artists.ShowLive",
+                "event_name": "destroy-album"
+              },
+              {
+                "line": 154,
+                "name": "destroy-artist",
+                "type": "handle_event",
+                "module_name": "TunezWeb.Artists.ShowLive",
+                "event_name": "destroy-artist"
+              },
+              {
+                "line": 35,
+                "name": "render",
+                "type": "render",
+                "module_name": "TunezWeb.Artists.ShowLive"
+              },
+              {
+                "line": 10,
+                "name": "handle_params",
+                "type": "handle_params",
+                "module_name": "TunezWeb.Artists.ShowLive"
+              },
+              {
+                "line": 6,
+                "name": "mount",
+                "type": "mount",
+                "module_name": "TunezWeb.Artists.ShowLive"
+              }
+            ]
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex",
+          {
+            "module": "TunezWeb.Albums.FormLive",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex",
+            "functions": [
+              {
+                "line": 112,
+                "name": "reorder-tracks",
+                "type": "handle_event",
+                "module_name": "TunezWeb.Albums.FormLive",
+                "event_name": "reorder-tracks"
+              },
+              {
+                "line": 108,
+                "name": "remove-track",
+                "type": "handle_event",
+                "module_name": "TunezWeb.Albums.FormLive",
+                "event_name": "remove-track"
+              },
+              {
+                "line": 104,
+                "name": "add-track",
+                "type": "handle_event",
+                "module_name": "TunezWeb.Albums.FormLive",
+                "event_name": "add-track"
+              },
+              {
+                "line": 100,
+                "name": "save",
+                "type": "handle_event",
+                "module_name": "TunezWeb.Albums.FormLive",
+                "event_name": "save"
+              },
+              {
+                "line": 96,
+                "name": "validate",
+                "type": "handle_event",
+                "module_name": "TunezWeb.Albums.FormLive",
+                "event_name": "validate"
+              },
+              {
+                "line": 15,
+                "name": "render",
+                "type": "render",
+                "module_name": "TunezWeb.Albums.FormLive"
+              },
+              {
+                "line": 4,
+                "name": "mount",
+                "type": "mount",
+                "module_name": "TunezWeb.Albums.FormLive"
+              }
+            ]
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex",
+          {
+            "module": "TunezWeb.Artists.IndexLive",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex",
+            "functions": [
+              {
+                "line": 179,
+                "name": "search",
+                "type": "handle_event",
+                "module_name": "TunezWeb.Artists.IndexLive",
+                "event_name": "search"
+              },
+              {
+                "line": 174,
+                "name": "change-sort",
+                "type": "handle_event",
+                "module_name": "TunezWeb.Artists.IndexLive",
+                "event_name": "change-sort"
+              },
+              {
+                "line": 26,
+                "name": "render",
+                "type": "render",
+                "module_name": "TunezWeb.Artists.IndexLive"
+              },
+              {
+                "line": 14,
+                "name": "handle_params",
+                "type": "handle_params",
+                "module_name": "TunezWeb.Artists.IndexLive"
+              },
+              {
+                "line": 6,
+                "name": "mount",
+                "type": "mount",
+                "module_name": "TunezWeb.Artists.IndexLive"
+              }
+            ]
+          }
+        ],
+        [
+          "/var/home/gt/src/tunez/lib/tunez_web/live/notifications_live.ex",
+          {
+            "module": "TunezWeb.NotificationsLive",
+            "filePath": "/var/home/gt/src/tunez/lib/tunez_web/live/notifications_live.ex",
+            "functions": [
+              {
+                "line": 59,
+                "name": "dismiss-notification",
+                "type": "handle_event",
+                "module_name": "TunezWeb.NotificationsLive",
+                "event_name": "dismiss-notification"
+              },
+              {
+                "line": 9,
+                "name": "render",
+                "type": "render",
+                "module_name": "TunezWeb.NotificationsLive"
+              },
+              {
+                "line": 4,
+                "name": "mount",
+                "type": "mount",
+                "module_name": "TunezWeb.NotificationsLive"
+              }
+            ]
+          }
+        ]
+      ],
+      "fileHashes": {
+        "/var/home/gt/src/tunez/lib/tunez_web/live/artists/form_live.ex": "a3ab45cad2142b781e0f0018c7d03d17e69bdce2",
+        "/var/home/gt/src/tunez/lib/tunez_web/live/artists/show_live.ex": "2a6e67cf19fe099b9fe441df1b10bbbc0127dc1e",
+        "/var/home/gt/src/tunez/lib/tunez_web/live/albums/form_live.ex": "7b33c7672d805e4aa3c93106b82dd7092c155d35",
+        "/var/home/gt/src/tunez/lib/tunez_web/live/artists/index_live.ex": "32bec7af61818ef692c692700f2e10b7c43a5c7c",
+        "/var/home/gt/src/tunez/lib/tunez_web/live/notifications_live.ex": "a71b79f57e5477554bcba913bd2859ba75636dd9"
+      },
+      "workspaceRoot": "/var/home/gt/src/tunez"
+    }
+  },
+  "fileHashes": {}
+}
