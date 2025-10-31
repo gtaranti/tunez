@@ -6,3 +6,5 @@ alias Tunez.Music.Album
 alias Tunez.Music.Track
 alias Tunez.Music.Genre
 alias Tunez.Music.Playlist
+alias Tunez.Accounts
+alias Tunez.Accounts.User
