@@ -21,6 +21,7 @@ defmodule TunezWeb.Artists.IndexLive do
       Tunez.Music.search_artists!(query_text,
         page: page_params,
         query: [sort_input: sort_by],
+        actor: socket.assigns.current_user,
         load: [:album_count, :latest_album_year_released, :cover_image_url]
       )
 
@@ -43,7 +44,7 @@ defmodule TunezWeb.Artists.IndexLive do
           <.search_box query={@query_text} method="get" phx-submit="search" data-role="artist-search">
           </.search_box>
         </:action>
-        <:action>
+        <:action :if={Tunez.Music.can_create_artist?(@current_user)}>
           <.button_link navigate={~p"/artists/new"} kind="primary">
             New Artist
           </.button_link>
