@@ -129,7 +129,7 @@ defmodule TunezWeb.Albums.FormLive do
       {:ok, album} ->
         {:noreply,
          socket
-         |> put_flash(:info, "Album created successfully")
+         |> put_flash(:info, "Album saved successfully")
          |> push_navigate(to: ~p"/artists/#{album.artist_id}")}
 
       {:error, form} ->

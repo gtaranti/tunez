@@ -68,7 +68,7 @@ defmodule Tunez.Music.Album do
 
     validate match(:cover_image_url, ~r"(https://|/images/).+(jpg|jpeg|png|gif)$"),
       where: [changing(:cover_image_url)],
-      message: "must start with https:// or /images/ (jpg, jpeg, png, gif)"
+      message: "must start with https:// or /images/"
   end
 
   def next_year, do: Date.utc_today().year + 1

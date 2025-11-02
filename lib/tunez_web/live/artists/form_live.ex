@@ -68,7 +68,7 @@ defmodule TunezWeb.Artists.FormLive do
       {:ok, artist} ->
         socket =
           socket
-          |> put_flash(:info, "Artist created successfully!")
+          |> put_flash(:info, "Artist saved successfully!")
           |> push_navigate(to: ~p"/artists/#{artist}")
 
         {:noreply, socket}
@@ -76,7 +76,7 @@ defmodule TunezWeb.Artists.FormLive do
       {:error, form} ->
         socket =
           socket
-          |> put_flash(:error, "Failed to create artist.")
+          |> put_flash(:error, "Could not save artist data.")
           |> assign(:form, form)
 
         {:noreply, socket}
