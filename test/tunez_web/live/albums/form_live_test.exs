@@ -31,7 +31,7 @@ defmodule TunezWeb.Albums.FormLiveTest do
       assert album.artist_id == artist.id
     end
 
-    @tag skip: "Can be enabled during chapter 8.
+    # @tag skip: "Can be enabled during chapter 8.
     #  Also need to change `_conn` to `conn` below"
     test "track data can be added and removed for an album", %{conn: conn} do
       artist = generate(artist())

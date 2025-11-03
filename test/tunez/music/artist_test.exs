@@ -140,7 +140,7 @@ defmodule Tunez.Music.ArtistTest do
   end
 
   describe "Tunez.Music.destroy_artist/2" do
-    @tag skip: "can be enabled during chapter 10"
+    # @tag skip: "can be enabled during chapter 10"
     test "deletes any associated albums when the artist is deleted" do
       artist = generate(artist())
       album = generate(album(artist_id: artist.id, name: "to be deleted"))
@@ -191,7 +191,7 @@ defmodule Tunez.Music.ArtistTest do
       }
     end
 
-    @tag skip: "Also uncomment the `setup_users` function above"
+    # @tag skip: "Also uncomment the `setup_users` function above"
     test "only admins can create new artists" do
       users = setup_users()
 
@@ -201,7 +201,7 @@ defmodule Tunez.Music.ArtistTest do
       refute Music.can_create_artist?(nil)
     end
 
-    @tag skip: "Also uncomment the `setup_users` function above"
+    # @tag skip: "Also uncomment the `setup_users` function above"
     test "only admins can delete artists" do
       users = setup_users()
       artist = generate(artist())
@@ -212,7 +212,7 @@ defmodule Tunez.Music.ArtistTest do
       refute Music.can_destroy_artist?(nil, artist)
     end
 
-    @tag skip: "Also uncomment the `setup_users` function above"
+    # @tag skip: "Also uncomment the `setup_users` function above"
     test "admins and editors can update artists" do
       users = setup_users()
       artist = generate(artist())

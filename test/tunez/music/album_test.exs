@@ -20,7 +20,7 @@ defmodule TunezWeb.Music.AlbumTest do
       assert album.updated_by_id == actor.id
     end
 
-    @tag skip: "can be enabled during chapter 10"
+    # @tag skip: "can be enabled during chapter 10"
     test "creates and sends notifications for followers of the album's artist" do
       artist = generate(artist())
       actor = generate(user(role: :admin))
@@ -62,7 +62,7 @@ defmodule TunezWeb.Music.AlbumTest do
   end
 
   describe "Tunez.Music.destroy_album/1-2" do
-    @tag skip: "can be enabled during chapter 10"
+    # @tag skip: "can be enabled during chapter 10"
     test "deletes any notifications about the album" do
       editor = generate(user(role: :editor))
       album = generate(album(actor: editor))
@@ -77,7 +77,7 @@ defmodule TunezWeb.Music.AlbumTest do
       assert Enum.map(notifications, & &1.id) == [to_stay_id]
     end
 
-    @tag skip: "can be enabled during chapter 10"
+    # @tag skip: "can be enabled during chapter 10"
     test "sends pubsub notifications about the notification deletion" do
       follower = generate(user())
       album = generate(album())
@@ -101,7 +101,7 @@ defmodule TunezWeb.Music.AlbumTest do
       }
     end
 
-    @tag skip: "Also uncomment the `setup_users` function above"
+    # @tag skip: "Also uncomment the `setup_users` function above"
     test "admins and editors can create new albums" do
       users = setup_users()
       assert Music.can_create_album?(users.admin)
@@ -110,7 +110,7 @@ defmodule TunezWeb.Music.AlbumTest do
       refute Music.can_create_album?(nil)
     end
 
-    @tag skip: "Also uncomment the `setup_users` function above"
+    # @tag skip: "Also uncomment the `setup_users` function above"
     test "admins can delete albums" do
       users = setup_users()
       album = generate(album())
@@ -120,7 +120,7 @@ defmodule TunezWeb.Music.AlbumTest do
       refute Music.can_destroy_album?(nil, album)
     end
 
-    @tag skip: "Also uncomment the `setup_users` function above"
+    # @tag skip: "Also uncomment the `setup_users` function above"
     test "admins can update albums" do
       users = setup_users()
       album = generate(album())
@@ -130,7 +130,7 @@ defmodule TunezWeb.Music.AlbumTest do
       refute Music.can_update_album?(nil, album)
     end
 
-    @tag skip: "Also uncomment the `setup_users` function above"
+    # @tag skip: "Also uncomment the `setup_users` function above"
     test "editors can edit albums that they created" do
       users = setup_users()
       can_edit = generate(album(seed?: true, created_by: users.editor))
@@ -140,7 +140,7 @@ defmodule TunezWeb.Music.AlbumTest do
       refute Music.can_update_album?(users.editor, cant_edit)
     end
 
-    @tag skip: "Also uncomment the `setup_users` function above"
+    # @tag skip: "Also uncomment the `setup_users` function above"
     test "editors can delete albums that they created" do
       users = setup_users()
       can_delete = generate(album(seed?: true, created_by: users.editor))

@@ -38,7 +38,7 @@ defmodule Tunez.Music.Artist do
   end
 
   actions do
-    defaults [:create, :read, :destroy]
+    defaults [:create, :read]
     default_accept [:name, :biography]
 
     update :update do
@@ -59,6 +59,15 @@ defmodule Tunez.Music.Artist do
       filter expr(contains(name, ^arg(:query)))
 
       pagination offset?: true, default_limit: 12
+    end
+
+    destroy :destroy do
+      primary? true
+
+      change cascade_destroy(:albums,
+               return_notifications?: true,
+               after_action?: false
+             )
     end
   end
 
@@ -128,8 +137,8 @@ defmodule Tunez.Music.Artist do
     calculate :followed_by_me,
               :boolean,
               expr(exists(follower_relationships, follower_id == ^actor(:id))) do
-                public? true
-              end
+      public? true
+    end
 
     # calculate :album_count, :integer, expr(count(albums))
     # calculate :latest_album_year_released, :integer, expr(first(albums, field: :year_released))

@@ -69,17 +69,17 @@ defmodule TunezWeb.Artists.ShowLiveTest do
 
     # @tag skip:: "Can be enabled during chapter 8.
     #  Also need to change `_conn` to `conn` below"
-    # test "shows the track details", %{conn: conn} do
-    #    album = generate(album(track_count: 2))
+    test "shows the track details", %{conn: conn} do
+      album = generate(album(track_count: 2))
 
-    #    conn
-    #    |> visit(~p"/artists/#{album.artist_id}/")
-    #    |> within("#album-#{album.id}", fn session ->
-    #      session
-    #      |> assert_has("td", text: Enum.at(album.tracks, 0).name)
-    #      |> assert_has("td", text: Enum.at(album.tracks, 1).name)
-    #    end)
-    # end
+      conn
+      |> visit(~p"/artists/#{album.artist_id}/")
+      |> within("#album-#{album.id}", fn session ->
+        session
+        |> assert_has("td", text: Enum.at(album.tracks, 0).name)
+        |> assert_has("td", text: Enum.at(album.tracks, 1).name)
+      end)
+    end
 
     # @tag skip:: "Also need to change `_conn` to `conn` below"
     test "links to edit and delete the album for valid users", %{conn: conn} do
