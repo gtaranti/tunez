@@ -37,7 +37,7 @@ defmodule Tunez.MixProject do
       {:ash_authentication_phoenix, "~> 2.0 and < 2.11.0"},
       {:bcrypt_elixir, "~> 3.0"},
       {:picosat_elixir, "~> 0.2"},
-      {:ash_authentication, "~> 4.9.7"},
+      {:ash_authentication, "~> 4.0"},
       {:absinthe_phoenix, "~> 2.0"},
       {:ash_graphql, "~> 1.0"},
       {:open_api_spex, "~> 3.0"},
